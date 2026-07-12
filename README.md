@@ -1,11 +1,19 @@
 # GitFocus
-**GitFocus** - CLI-инструмент для тех у кого не получается сконцентрироватся и из-за этого в комитах постоянно каша.
-Задача хранится прямо у вас в рабочей области в файле `problem.txt`
+
+<div align="center">
+
+[![Version 0.1.0](https://img.shields.io/badge/Version-0.1.0-orange.svg)](https://github.com/python3demon/GitFocus)
+[![Python 3.12+](https://img.shields.io/badge/Python-3.14-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Platform Linux](https://img.shields.io/badge/Platform-Linux-FCC624.svg?logo=linux&logoColor=black)](https://www.kernel.org/)
+
+</div>
+
+**GitFocus** — CLI-инструмент для тех, у кого не получается сконцентрироваться, из-за чего в коммитах постоянно каша.
 
 ## План разработки (To-Do):
 - [x] Добавить базовые флаги для добавления, получения, закрытия, удаления задачи: -s, -g, -c, -r (`v0.0.1-beta`)
-- [x] Изменить названия флагов на более коректные (`v0.1.0-alpha`)
-- [ ] Добавить дополнительную проверку на наличие уже поставленной задачи в флаг -s (`v0.1.1`)
+- [x] Изменить названия флагов на более корректные (`v0.1.0-alpha`)
+- [ ] Добавить дополнительную проверку на наличие уже поставленной задачи в флаг -s (`v0.1.1-alpha`)
 
 ## Использование
 Программу нужно запускать хотябы с одним из флагов:
