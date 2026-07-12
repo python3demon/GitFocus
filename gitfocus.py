@@ -2,10 +2,10 @@
 import argparse
 
 parse = argparse.ArgumentParser()
-parse.add_argument("-s", "--set_task", type=str, help="Назначить задачу")
-parse.add_argument("-g", "--get_problem", action="store_true", help="Получить текущую задачу")
-parse.add_argument("-c", "--close_task", action="store_true", help="Закрыть задачу")
-parse.add_argument("-r", "--remove_task", action="store_true", help="Удалить задачу")
+parse.add_argument("-s", "--set-task", type=str, help="Назначить задачу")
+parse.add_argument("-g", "--get-task", action="store_true", help="Получить текущую задачу")
+parse.add_argument("-c", "--close-task", action="store_true", help="Закрыть задачу")
+parse.add_argument("-r", "--remove-task", action="store_true", help="Удалить задачу")
 
 args_user = vars(parse.parse_args())
 args_user = {key: val for key, val in args_user.items() if val not in [False, None]}
