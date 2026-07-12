@@ -1,7 +1,7 @@
 # GitFocus
 
 <div align="center">
-<img src="assets/logo.png" alt="Logo" width="200">
+<img src="logo.png" alt="Logo" width="200">
 
 GitFocus — CLI-инструмент для борьбы с хаосом в коммитах и потерей фокуса.
 
