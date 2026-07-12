@@ -2,13 +2,14 @@
 
 <div align="center">
 
+**GitFocus** — CLI-инструмент для тех, у кого не получается сконцентрироваться, из-за чего в коммитах постоянно каша.
+
 [![Version 0.1.0](https://img.shields.io/badge/Version-0.1.0-orange.svg)](https://github.com/python3demon/GitFocus)
 [![Python 3.12+](https://img.shields.io/badge/Python-3.14-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Platform Linux](https://img.shields.io/badge/Platform-Linux-FCC624.svg?logo=linux&logoColor=black)](https://www.kernel.org/)
 
 </div>
 
-**GitFocus** — CLI-инструмент для тех, у кого не получается сконцентрироваться, из-за чего в коммитах постоянно каша.
 
 ## План разработки (To-Do):
 - [x] Добавить базовые флаги для добавления, получения, закрытия, удаления задачи: -s, -g, -c, -r (`v0.0.1-beta`)
