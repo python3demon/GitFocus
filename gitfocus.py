@@ -1,37 +1,32 @@
 #!/usr/bin/env python3
 import argparse
-
 parse = argparse.ArgumentParser()
-parse.add_argument("-s", "--set-task", type=str, help="Назначить задачу")
-parse.add_argument("-g", "--get-task", action="store_true", help="Получить текущую задачу")
-parse.add_argument("-c", "--close-task", action="store_true", help="Закрыть задачу")
-parse.add_argument("-r", "--remove-task", action="store_true", help="Удалить задачу")
+subparsers = parse.add_subparsers(dest="command")
 
-args_user = vars(parse.parse_args())
-args_user = {key: val for key, val in args_user.items() if val not in [False, None]}
+add_command = subparsers.add_parser("set", help="Назначит задачу")
+add_command.add_argument("task", type=str, help="Описание задачи")
 
-if len(args_user) > 1:
-    print("Нельзя указывать два флага в одной команде")
-    exit()
-elif len(args_user) < 1:
-    print("Укажите один из флагов. Подробнее gitfocus --help")
-    exit()
-if args_user.get("set_task"):
+subparsers.add_parser("get", help="Получить текущую задачу")
+subparsers.add_parser("close", help="Закрыть задачу")
+subparsers.add_parser("remove", help="Удалить задачу")
+
+args_user = parse.parse_args()
+
+if args_user.command == "set":
     with open("problem.txt", "r+") as file:
         task = file.readline().replace("Problem:", "").strip()
     if task:
         print("У вас уже есть задача для смены сначало удалите затем добавьте")
     else:
         with open("problem.txt", "w") as file:
-            file.write(f"Problem: {args_user['set_task']}\n")
+            file.write(f"Problem: {args_user.task}\n")
 
-elif args_user.get("get_task"):
+elif args_user.command == "get":
     with open("problem.txt", "r") as file:
         task = file.readline()
         task = task.replace("Problem: ", "").strip()
-    print(task)
-elif args_user.get("close_task") or args_user.get("remove_task"):
-    if args_user.get("close_task"):
+elif args_user.command == "close" or args_user.command == "remove":
+    if args_user.command == "close":
         print("Поздравляю с успешным закрытием задачи!")
     else:
         if input("Вы действительно хотите УДАЛИТЬ задачу? [Y/n]: ").lower() == "n":
