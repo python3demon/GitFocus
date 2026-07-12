@@ -1,10 +1,11 @@
 # GitFocus
 
 <div align="center">
+<img src="assets/logo.png" alt="Logo" width="200">
 
 GitFocus — CLI-инструмент для борьбы с хаосом в коммитах и потерей фокуса.
 
-[![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-red.svg)](https://github.com/python3demon/GitFocus)
+[![Version 1.0.1](https://img.shields.io/badge/Version-1.0.0-red.svg)](https://github.com/python3demon/GitFocus)
 [![Python 3.12+](https://img.shields.io/badge/Python-3.14-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Platform Linux](https://img.shields.io/badge/Platform-Linux-FCC624.svg?logo=linux&logoColor=black)](https://www.kernel.org/)
 

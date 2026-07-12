@@ -3,7 +3,7 @@ import argparse
 parse = argparse.ArgumentParser()
 subparsers = parse.add_subparsers(dest="command")
 
-add_command = subparsers.add_parser("set", help="Назначит задачу")
+add_command = subparsers.add_parser("set", help="Назначить задачу")
 add_command.add_argument("task", type=str, help="Описание задачи")
 
 subparsers.add_parser("get", help="Получить текущую задачу")
@@ -25,6 +25,8 @@ elif args_user.command == "get":
     with open("problem.txt", "r") as file:
         task = file.readline()
         task = task.replace("Problem: ", "").strip()
+    print(task)
+
 elif args_user.command == "close" or args_user.command == "remove":
     if args_user.command == "close":
         print("Поздравляю с успешным закрытием задачи!")
