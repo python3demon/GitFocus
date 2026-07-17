@@ -5,7 +5,7 @@
 [![Python 3.12+](https://img.shields.io/badge/Python-3.14-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Platform Linux](https://img.shields.io/badge/Platform-Linux-FCC624.svg?logo=linux&logoColor=black)](https://www.kernel.org/)
 
-<h1>GitFocus — CLI-инструмент для борьбы с хаосом в коммитах и потерей фокуса.</h1>
+<h1>GitFocus — CLI-инструмент для борьбы с хаосом</h1>
 </div>
 
 ## План разработки (To-Do):
