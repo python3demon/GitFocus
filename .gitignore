@@ -8,6 +8,9 @@ __pycache__/
 
 *.txt
 
+# My draft-tasks
+.gitfocus.json 
+
 # Distribution / packaging
 .Python
 build/
