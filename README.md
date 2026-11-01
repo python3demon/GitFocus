@@ -1,7 +1,7 @@
 <div align="center">
 <img src="logo.png" alt="Logo" width="200">
 
-[![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-red.svg)](https://github.com/python3demon/GitFocus)
+[![Version 2.0.0](https://img.shields.io/badge/Version-2.0.0-red.svg)](https://github.com/python3demon/GitFocus)
 [![Python 3.12+](https://img.shields.io/badge/Python-3.14-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Platform Linux](https://img.shields.io/badge/Platform-Linux-FCC624.svg?logo=linux&logoColor=black)](https://www.kernel.org/)
 
@@ -13,7 +13,8 @@
 - [x] Изменить названия флагов на более корректные (`v0.1.0-alpha`)
 - [x] Добавить дополнительную проверку на наличие уже поставленной задачи в флаг -s (`v0.1.1-alpha`)
 - [x] Поменять флаги на подкоманды (`v1.0.0-alpha`)
-- [ ] Переписать скрипт с парадигмой ООП (`v1.0.1-alpha`)
+- [x] Переписать скрипт с парадигмой ООП (`v1.0.1-alpha`)
+
 ## Использование
 ### Под-команды
 ```text
@@ -55,16 +56,16 @@ gitfocus close
 # Клонируйте репозиторий и перейдите в директорию проекта:
 git clone https://github.com/python3demon/GitFocus.git && cd GitFocus/
 
-# Скопируйте скрипт в локальную директорию бинарников и сделайте скрипт исполняемым
-cp gitfocus.py ~/.local/bin/gitfocus && chmod +x ~/.local/bin/gitfocus
-
-# Добавьте путь в переменные окружения и обновите конфигурацию:
-# Для zshrc:
-echo 'export PATH="HOME/.local/bin:PATH"' >> ~/.zshrc && source ~/.zshrc
-
-# Для bash:
-echo 'export PATH="HOME/.local/bin:PATH"' >> ~/.bashrc && source ~/.bashrc
+# Устанавливаем скрипт глобально
+uv tool install .
 ```
+> [!WARNING]
+> Если после установки команда `gitfocus` недоступна, добавьте пути в ваш шелл автоматической командой
+```bash
+uv tool update-shell
+```
+*После этого перезапустите терминал.*
+
 Готово! Теперь вы можете вызывать скрипт из любой папки командой `gitfocus`.
 ## Стек Технологий
 * **Language:** Python 3.12+
